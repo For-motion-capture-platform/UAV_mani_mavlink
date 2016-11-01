@@ -64,5 +64,18 @@
             <field type="float" name="torque_6">torque of jiont 6 in N*m</field>
             <field type="float" name="torque_7">torque of jiont 7 in N*m</field>                     
       </message>
+      <message id="210" name="TARGET_INFO">
+	    <description>The information of target, including NED position, NED velocity, and Euler angle</description>
+	    <field type="uint64_t" name="time_usec">Timestamp</field>
+	    <field type="float" name="x">X Position</field>
+            <field type="float" name="y">Y Position</field>
+            <field type="float" name="z">Z Position</field>
+            <field type="float" name="vx">X Speed</field>
+            <field type="float" name="vy">Y Speed</field>
+            <field type="float" name="vz">Z Speed</field>
+	    <field type="float" name="roll">Roll angle (rad, -pi..+pi)</field>
+	    <field type="float" name="pitch">Pitch angle (rad, -pi..+pi)</field>
+	    <field type="float" name="yaw">Yaw angle (rad, -pi..+pi)</field>
+     </message>
     </messages>
 </mavlink>
