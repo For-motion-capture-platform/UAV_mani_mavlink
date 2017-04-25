@@ -64,6 +64,18 @@
             <field type="float" name="torque_6">torque of jiont 6 in N*m</field>
             <field type="float" name="torque_7">torque of jiont 7 in N*m</field>                     
       </message>
+      <message id="209" name="ATT_POS_VEL_MOCAP">
+	    <description>Motion capture attitude, position and velocity</description>
+	    <field type="uint64_t" name="time_usec">Timestamp</field>
+            <field type="float[4]" name="q">Attitude quaternion (w, x, y, z order, zero-rotation is 1, 0, 0, 0)</field> 
+	    <field type="float" name="x">X position in meters (NED)</field>
+            <field type="float" name="y">Y position in meters (NED)</field>
+            <field type="float" name="z">Z position in meters (NED)</field>
+            <field type="float" name="Vx">X velocity in m/s (NED)</field>
+            <field type="float" name="Vy">Y velocity in m/s (NED)</field>
+            <field type="float" name="Vz">Z velocity in m/s (NED)</field>
+
+     </message>
       <message id="210" name="TARGET_INFO">
 	    <description>The information of target, including NED position, NED velocity, and Euler angle</description>
 	    <field type="uint64_t" name="time_usec">Timestamp</field>
